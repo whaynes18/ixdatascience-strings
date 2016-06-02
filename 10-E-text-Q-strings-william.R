@@ -32,7 +32,7 @@ Frankenstein <- paste(frankenstein, collapse = " ")
 # Split nonsense on line breaks. Remove excess white space from each line. Reassemble the text as a single string.
 # Store the result as Nonsense.
 
-onsense <- paste(vector, collapse = ' ')
+Nonsense <- paste(vector, collapse = ' ')
 
 # Exercise 3 ----------------------------------------------------------------------------------------------------------
 
@@ -46,13 +46,14 @@ str_count(Frankenstein, "\\bme\\b")
 # Find the positions of all occurrences of the word "own" in Frankenstein.
 
 str_locate_all(Frankenstein, "\\b[Cc]ourage\\b")
+str_locate_all(Frankenstein, "\\b[Oo]wn\\b")
+
 
 # Exercise 5 ----------------------------------------------------------------------------------------------------------
 
 # In Nonsense replace every occurrence of "Bee" with "Donkey".
 
 str_replace_all(Nonsense, "Bee","Donkey")
-str_locate_all(Frankenstein, "\\b[Oo]wn\\b")
 
 # Exercise 6 ----------------------------------------------------------------------------------------------------------
 
